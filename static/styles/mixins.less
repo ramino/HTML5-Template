@@ -1,0 +1,64 @@
+/**
+ * Mixins.less
+ *
+ * 
+ */
+
+// Clearfix
+.clearfix {
+    display: table;
+    content: "";
+	*zoom: 1;
+
+	&:before, &:after {
+		line-height: 0;
+	}
+	
+	  &:after {
+		  clear: both;
+	  }
+}
+
+// Sizing shortcuts
+.size(@height, @width) {
+	height: @height;
+	  width: @width;
+}
+.square(@size) {
+	.size(@size, @size);
+}
+
+// Centered container element
+.container-fixed() {
+  margin-right: auto;
+  margin-left: auto;
+  .clearfix();
+}
+
+// Text overflow
+.text-indent() {
+	background: transparent;
+	color: transparent;
+	text-indent: -9999px;
+	line-height: 0;
+	font-size: 0;
+}
+
+// Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+// Sprite positions
+.sprite(@x, @y) {
+	background: url("../images/design/sprite.png") no-repeat;
+	background-position: -(@x) -(@y);
+}
