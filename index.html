@@ -2,34 +2,57 @@
 <html>
 <head>
 	<title>HTML5---blank-template</title>
-	<meta charset="utf-8" />
-	
-	<script src="http://code.jquery.com/jquery-latest.min.js">
-	<meta name="author" content="Radoslav Michalisko and Jan Bris">
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Vlasta.cz">
+	<meta name="keywords" content="Vlasta.cz, Recepty">
+	<meta name="author" content="Radoslav Michalisko, Ján Briš">
+	<link href="static/styles/master.less" rel="stylesheet/less" type="text/css">
+	<link href="static/styles/responsive.less" rel="stylesheet/less" type="text/css">
+	<script src="static/scripts/less/less.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <body>
-	<header>
-		<h1>H1 title</h1>
-		<menu>
+	<!-- container -->
+	<div id="container">
+
+		<!-- header -->
+		<header>
+			<h1>H1 title</h1>
+			<menu>
+				<ul>
+					<li><a href="http://www.templateart.sk/" title="templateart.sk">Templateart.sk</a></li>
+					<li><a href="http://www.seoart.sk/" title="seoart.sk">Seoart.sk</a></li>
+					<li><a href="http://www.ramino.sk" title="ramino.sk">Ramino.sk</a></li>
+				</ul>
+			</menu>
+		</header>
+		<!-- /header -->
+	 
+		<!-- content -->
+		<div id="content">
+			<h2>H2 title</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<ul>
-				<li><a href="http://www.templateart.sk/" title="templateart.sk">Templateart.sk</a>
-				</li>
-				<li>
-					<a href="http://www.seoart.sk/" title="seoart.sk">Seoart.sk</a>
-				</li>
-				<li>
-					<a href="http://www.ramino.sk" title="ramino.sk">Ramino.sk</a>
-				</li>
-			</ul>
-		</menu>
-	</header>
- 
-	<content>
-		<h2>H2 title</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</content>
- 
-	<footer>
-		Copyleft 2010 - templateart.sk - HTML5 blank template.
-	</footer>
+				<li>adipisicing elit</li>
+				<li>incididunt ut labore</li>
+				<li>dolore magna aliqua</li>
+				<li>sit amet</li>
+			</ul>		
+			<aside id="main">
+				<h3>H3 title</h3>
+				<p>Ut enim ad minim veniam</p>
+			</aside>
+		</div>
+		<!-- /content -->
+		
+		<!-- footer -->
+		<footer>
+			<p>&copy; 2012 - HTML5 blank template.</p>
+		</footer>
+		<!-- /footer -->
+	
+	</div>
+	<!-- /container -->
 </body>
 </html>
