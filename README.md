@@ -1,6 +1,6 @@
-HTML5 template
+A free HTML5 template
 ======================
 
-HTML5 template
-
-blank HTML5 template with scripts.
+* Features
+* Uses HTML5 *
+* Free to use! *
