@@ -1,7 +1,9 @@
-A free HTML5 template
+HTML5 blank template
 ======================
 
-*Features*
-* Uses HTML5
-* Contains jQuery, Less and Modernizr
+###Features
+* HTML5 ready
+* The lates jQuery
+* The lates Modernizr
+* Optimized Google Analytics snippet
 * Free to use!
