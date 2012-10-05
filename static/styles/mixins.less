@@ -1,11 +1,9 @@
-/**
- * Mixins.less
- *
- * 
- */
+// Mixins
+// --------------------
 
-// Clearfix
-.clearfix {
+// Clear
+// --------------------
+.clear {
     display: table;
     content: "";
 	*zoom: 1;
@@ -19,23 +17,25 @@
 	  }
 }
 
-// Sizing shortcuts
+// Size
+// --------------------
 .size(@height, @width) {
 	height: @height;
-	  width: @width;
+	width: @width;
 }
 .square(@size) {
 	.size(@size, @size);
 }
 
-// Centered container element
-.container-fixed() {
-  margin-right: auto;
-  margin-left: auto;
-  .clearfix();
+// Centered
+// --------------------
+.center(@top-bottom) {
+	margin: @top-bottom auto;
+	.clear();
 }
 
-// Text overflow
+// Text
+// --------------------
 .text-indent() {
 	background: transparent;
 	color: transparent;
@@ -44,7 +44,8 @@
 	font-size: 0;
 }
 
-// Border Radius
+// Border
+// --------------------
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
@@ -52,12 +53,14 @@
 }
 
 // Opacity
+// --------------------
 .opacity(@opacity) {
   opacity: @opacity / 100;
   filter: ~"alpha(opacity=@{opacity})";
 }
 
-// Sprite positions
+// Sprite
+// --------------------
 .sprite(@x, @y) {
 	background: url("../images/design/sprite.png") no-repeat;
 	background-position: -(@x) -(@y);

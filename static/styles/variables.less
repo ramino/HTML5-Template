@@ -1,102 +1,77 @@
-/**
- * Variables.less
- *
- * Fonts, Colors, text formating
- */
+// Variables
+// --------------------
 
 // Colors
-// -------------------------
-@black:                 #000;
-@grayDarker:            #222;
-@grayDark:              #4b4b4b;
-@gray:                  #555;
-@grayLight:             #bebebe;
-@grayLighter:           #eee;
-@white:                 #fff;
+// --------------------
+@black:				#000;
+@gray:      		#555;
+@gray-light:		#ddd;
+@white:     		#fff;
+@red:				#ff0000;
+@green:				#008000;
 
-
-// Accent colors
-// -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
-@green:                 #46a546;
-@red:                   #E90000;
-@yellow:                #FFCC00;
-@orange:                #FF6F00;
-@pink:                  #FF3276;
-@purple:                #7a43b6;
-
-// Links
-// -------------------------
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+// Link
+// --------------------
+@link:				@green;
+@link-hover:    	darken(@link, 15%);
 
 
 // Typography
-// -------------------------
-@sansFontFamily:        Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
-@monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+// --------------------
+@san-serif:			"Titillium web", sans-serif;
+@serif:				Georgia, "Times New Roman", serif;
+@monospace:     	Monaco, "Courier New", monospace;
 
-@baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        20px;
-@altFontFamily:         @serifFontFamily;
-
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+// Size
+// --------------------
+@font-size:			16px;
+@line-height:		25px;
 
 // Tables
 // -------------------------
-@tableBackground:                   transparent; // overall background-color
-@tableBackgroundAccent:             #f9f9f9; // for striping
-@tableBackgroundHover:              #f5f5f5; // for hover
-@tableBorder:                       #ddd; // table and cell border
+@table-bg:			transparent;
+@table-border:		@gray-light;
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         #bbb;
+@btn:				@white;
+@btn-border:		@gray-light;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
-
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
-
-@btnSuccessBackground:              #62c462;
-@btnSuccessBackgroundHighlight:     #51a351;
-
-@btnWarningBackground:              lighten(@orange, 15%);
-@btnWarningBackgroundHighlight:     @orange;
-
-@btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      #bd362f;
-
-@btnInverseBackground:              #444;
-@btnInverseBackgroundHighlight:     @grayDarker;
-
-
-// Forms
+// Grid
 // -------------------------
-@inputBackground:               @white;
-@inputBorder:                   #ccc;
-@inputBorderRadius:             3px;
-@inputDisabledBackground:       @grayLighter;
-@formActionsBackground:         #f5f5f5;
 
-// Dropdowns
-// -------------------------
-@dropdownBackground:            @white;
-@dropdownBorder:                rgba(0,0,0,.2);
-@dropdownDividerTop:            #e5e5e5;
-@dropdownDividerBottom:         @white;
+// Grid > 960px
+@media screen and (min-width: 980px) {
+	@column-width: 	60;
+	@spacing: 		20;
+	@columns: 		12;
+	@grid-960: 		(@column-width*@columns) + (@spacing*@columns) * 1px;
+	
+	#container {
+		width: @grid-960;
+	}
+}
 
-@dropdownLinkColor:             @grayDark;
-@dropdownLinkColorHover:        @white;
-@dropdownLinkColorActive:       @dropdownLinkColor;
+// Grid < 960px
+@media screen and (max-width: 979px) {
+	@column-width: 	40;
+	@spacing: 		10;
+	@columns: 		12;
+	@grid-800: 		(@column-width*@columns) + (@spacing*@columns) * 1px;
 
-@dropdownLinkBackgroundActive:  @linkColor;
-@dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
+	#container {
+		width: @grid-800;
+	}
+}
+
+// Grid < 600px
+@media screen and (max-width: 610px) {
+	@column-width: 	20;
+	@spacing: 		10;
+	@columns: 		12;
+	@grid-600: 		(@column-width*@columns) + (@spacing*@columns) * 1px;
+
+	#container {
+		width: @grid-600;
+	}
+}
