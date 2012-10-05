@@ -1,9 +1,8 @@
-HTML5 blank template
+HTML5 Template
 ======================
 
 ###Features
-* HTML5 ready
-* The lates jQuery
-* The lates Modernizr
-* Optimized Google Analytics snippet
-* Free to use!
+* Easy to customize and free to use.
+* The lates jQuery and Modernizr.
+* Optimized Google Analytics snippet.
+* Responsive design
